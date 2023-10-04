@@ -1,0 +1,16 @@
+package in.mindcraft.SpringDemo;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  // Laptop l1=new Laptop();
+   ApplicationContext context= new ClassPathXmlApplicationContext("spring.xml");
+   Laptop l1=(Laptop)context.getBean("lap");
+   l1.show();
+	}
+
+}
